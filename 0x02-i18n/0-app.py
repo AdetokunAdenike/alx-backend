@@ -1,10 +1,7 @@
 #!/usr/bin/env python3
 """
-
 Basic Flask app that renders a "Welcome" page.
-
 """
-
 
 from flask import Flask, render_template
 
