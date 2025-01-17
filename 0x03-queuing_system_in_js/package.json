@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon --exec npx babel-node --presets @babel/preset-env",
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "mocha --require @babel/register --exit 8-job.test.mjs"
   },
   "dependencies": {
     "express": "^4.17.1",
@@ -18,6 +19,7 @@
     "@babel/core": "^7.26.0",
     "@babel/node": "^7.26.0",
     "@babel/preset-env": "^7.26.0",
+    "@babel/register": "^7.25.9",
     "chai": "^4.2.0",
     "mocha": "^6.2.2",
     "sinon": "^7.5.0"
